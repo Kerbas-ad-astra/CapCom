@@ -53,6 +53,7 @@ namespace CapCom
 		private Contract root;
 		private float totalFundsReward, totalRepReward, totalSciReward;
 		private float totalFundsPenalty, totalRepPenalty;
+		private float decPen;
 		private double expire, deadline, completed;
 		private string notes;
 		private string fundsRew, fundsAdv, fundsPen, repRew, repPen, sciRew;
@@ -144,6 +145,8 @@ namespace CapCom
 			contractRewards();
 			contractAdvance();
 			contractPenalties();
+
+			decPen = HighLogic.CurrentGame.Parameters.Career.RepLossDeclined;
 
 			totalFundsReward = rewards();
 			totalFundsPenalty = penalties();
@@ -317,8 +320,6 @@ namespace CapCom
 				return ((BaseContract)root).targetBody;
 			else if (t == typeof(ISRUContract))
 				return ((ISRUContract)root).targetBody;
-			else if (t == typeof(RecordTrackContract))
-				return null;
 			else if (t == typeof(SatelliteContract))
 			{
 				SpecificOrbitParameter p = root.GetParameter<SpecificOrbitParameter>();
@@ -326,7 +327,7 @@ namespace CapCom
 				if (p == null)
 					return null;
 
-				return p.targetBody;
+				return p.TargetBody;
 			}
 			else if (t == typeof(StationContract))
 				return ((StationContract)root).targetBody;
@@ -504,6 +505,11 @@ namespace CapCom
 		public string SciRew
 		{
 			get { return sciRew; }
+		}
+
+		public float DecPen
+		{
+			get { return decPen; }
 		}
 
 		public string Target

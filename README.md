@@ -73,8 +73,8 @@ license][CCLicense]
 	   * Cancel active contracts if allowed
   * Review **completed contracts**
   
-##### Currently selected contract is indicated by the green bar on the left
-  * By holding the **multi-select key** (left Ctrl by default; can be edited) multiple contracts can be selected
+##### Currently selected contracts are indicated by the green bar on the left
+  * By holding the **multi-select key** (left Ctrl by default; can be edited) multiple contracts can be selected or de-selected
   * Multiple contracts can be accepted, declined, or canceled if allowed
 
 #### Contract Header
@@ -109,6 +109,7 @@ license][CCLicense]
 
 ##### The overall **mission rewards** are displayed at the bottom of the window
   * These also reflect any changes made by **strategy modifiers**
+  * Contract **decline penalties** are shown for offered contracts
 
 #### Agency Info
 ![][CC:agency]
@@ -158,7 +159,7 @@ license][CCLicense]
 [CC:contract-header]: http://i.imgur.com/HQh88N1.png
 [CC:contract-info]: http://i.imgur.com/FSbIHBq.png
 [CC:contract-warn]: http://i.imgur.com/MYFREr2.png
-[CC:rewards]: http://i.imgur.com/CIqqugF.png
+[CC:rewards]: http://i.imgur.com/rSTlPpQ.png
 [CC:objectives]: http://i.imgur.com/vheC0BB.png
 [CC:agency]: http://i.imgur.com/taMAEqY.png
 [CC:settings-options]: http://i.imgur.com/EAvmNlI.png
@@ -172,7 +173,7 @@ license][CCLicense]
 
 [shield:license-mit]: http://img.shields.io/badge/license-mit-a31f34.svg
 [shield:license-cc-by-sa]: http://img.shields.io/badge/license-CC%20BY--SA-green.svg
-[shield:support-ksp]: http://img.shields.io/badge/for%20KSP-v1.0.4-bad455.svg
+[shield:support-ksp]: http://img.shields.io/badge/for%20KSP-v1.0.5-bad455.svg
 [shield:ckan]: https://img.shields.io/badge/CKAN-Indexed-brightgreen.svg
-[shield:support-toolbar]: http://img.shields.io/badge/works%20with%20Blizzy's%20Toolbar-1.7.9-7c69c0.svg
+[shield:support-toolbar]: http://img.shields.io/badge/works%20with%20Blizzy's%20Toolbar-1.7.10-7c69c0.svg
 [shield:support-cwp]: https://img.shields.io/badge/works%20with%20Contracts%20Window%20%2B-5.3-orange.svg
