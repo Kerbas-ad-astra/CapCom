@@ -45,6 +45,8 @@ namespace CapCom
 		public bool showCancelWarning = true;
 		[Persistent]
 		public bool tooltipsEnabled = true;
+		[Persistent]
+		public float windowScale = 1f;
 		//[Persistent]
 		//public bool useKSPStyle = false;
 		[Persistent]
@@ -57,6 +59,10 @@ namespace CapCom
 		public bool forceDecline = false;
 		[Persistent]
 		public bool forceCancel = false;
+		[Persistent]
+		public bool useShortcuts = true;
+		[Persistent]
+		public bool acceptDeclineKeys = true;
 		[Persistent]
 		public float windowHeight = 600;
 		[Persistent]
@@ -83,7 +89,7 @@ namespace CapCom
 		public CapComSettings (string file)
 		{
 			FilePath = file;
-			NodeName = "CapCom/" + file + "/" + this.GetType().Name;
+			NodeName = "DMagicUtilities/CapCom/" + file + "/" + this.GetType().Name;
 
 			Load();
 		}
